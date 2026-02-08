@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hope Foundation | NGO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1 class="logo">Hope Foundation</h1>
+    <nav id="nav">
+      <a href="#about">About</a>
+      <a href="#work">Our Work</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="menu" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Together We Can Change Lives</h2>
+    <p>Helping children, women, and communities build a better future.</p>
+    <button>Donate Now</button>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      Hope Foundation is a non-profit organization working towards education,
+      healthcare, and equality for underprivileged communities.
+    </p>
+  </section>
+
+  <!-- Our Work -->
+  <section id="work" class="section cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d" alt="Education">
+      <h3>Education</h3>
+      <p>Providing free education and learning resources to children.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5" alt="Healthcare">
+      <h3>Healthcare</h3>
+      <p>Medical camps and health awareness programs.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" alt="Women Empowerment">
+      <h3>Women Empowerment</h3>
+      <p>Supporting women through skill development and training.</p>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="section gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d">
+      <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5">
+      <img src="https://images.unsplash.com/photo-1497485692312-a26e1cc30f1d">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Hope Foundation. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

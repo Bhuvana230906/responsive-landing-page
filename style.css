@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #2e8b57;
+  color: white;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.menu {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: url("https://images.unsplash.com/photo-1497485692312-a26e1cc30f1d") center/cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero button {
+  padding: 12px 25px;
+  margin-top: 15px;
+  border: none;
+  background: #ffcc00;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Sections */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+}
+
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact */
+.contact form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.contact button {
+  padding: 10px;
+  background: #2e8b57;
+  color: white;
+  border: none;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #2e8b57;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  .menu {
+    display: block;
+  }
+}
